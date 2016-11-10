@@ -1,0 +1,233 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2016 Thomas Kilian (thomas@inertar.de)
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Thomas}{Kilian}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{not disclosed}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{not disclosed}                   % optional, remove / comment the line if not wanted
+\phone[fixed]{not disclosed}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{kiliant@in.tum.de}                               % optional, remove / comment the line if not wanted
+\homepage{kiliant.net}                          % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{Some infinities are bigger than other infinities.}                        % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\small{Undergraduate computer scientist. Passionate about science, with strong technical, business, and interpersonal skills for working in a team and successfully completing a project.}
+
+\section{Employment / Volunteering}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{\cventry{October 2016--March 2017}{Teaching Assistant (part-time)}{Technical University of Munich}{Munich}{}{\vspace{3pt}At the chair of computer technology and computer organization I am responsible for two tutorials of the lecture "Introduction to Computer Organization and Technology - Computer Architecture". My tutorials are visited by approx. 60 students (bachelor and master courses). Additionally I am available for consultation and will be grading the exams.}}
+
+\item{\cventry{January 2015--today}{System Administrator (part-time)}{Ludwig-Maximilians-Universität}{Munich}{}{\vspace{3pt}
+At the faculty of physics, I am currently responsible for maintaining servers and user work stations. Particularly it is my job to check and apply security patches and ensure a smooth experience for our users. For the latter, I provide support in regard to computing and printing problems. I volunteered to give lectures for students at the faculty, e.g. as instruction to our operating systems and services or security lectures. I participated in various projects, such as deploying Gitlab (solely responsible, for testing purposes), maintaining an existing information tool displaying users and workload and currently implementing Apache Hadoop in our systems.}}
+
+\item{\cventry{June 2016--October 2016}{Community Mentor (volunteer)}{Coursera}{Munich}{}
+{\vspace{3pt}
+As a Community Mentor I help other learners on Coursera with both technical and subject questions and help to provide an essential link between the instructors (and creators of the course) and learners. I also give      feedback to Coursera and participate in monthly video conference meetings.}}
+
+\item{\cventry{September 2012}{Station Master Intern}{DB Netz AG}{Passau}{}
+{\vspace{3pt}
+During a week-long internship at the local division of DB Netz AG - the infrastructure provider in the Deutsche Bahn concern - I learnt about the various systems playing together to make a train journey possible. I was able to
+learn to manually guide a train from start to its destination, about communication between various station and to handle emergencies.}}
+
+%\vspace{6pt}
+
+\end{itemize}
+
+\section{Education}
+
+\vspace{5pt}
+
+\subsection{Academic Qualifications}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\cventry{2015--today}{Undergraduate Informatics (TUM)}{Technical University Munich}{Garching}{}{}}
+
+\item{\cventry{2014--2015}{Undergraduate Physics}{Ludwig-Maximilians-Universität}{Munich}{}{}}  % arguments 3 to 6 can be left empty
+
+\item{\cventry{2006--2014}{A levels}{Gymnasium Leopoldinum}{Passau}{\textit{Final Grade: 1.4 (main subjects: Mathematics, German, English, Physics, History)}}{}}
+
+\end{itemize}
+
+\vspace{2pt}
+
+\subsection{Completed Courses}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\textbf{Lab Course - Computer Architecture} \textit{Grade: 1.7}
+
+\vspace{2pt}
+
+\small{Solving two term-long projects in assembly and microprogramming with two fellow students.}}
+
+\item{\textbf{Fundamentals of Programming (Exercises \& Laboratory)} \textit{Grade: 1.0}
+
+\vspace{2pt}
+\small{Java Programming. Smaller problems had to be solved each week during the term. Included one final capstone project (with GUI).}}
+
+\item{\textbf{Introduction to Computer Organization and Technology - Computer Architecture} \textit{Grade: 2.0}}
+
+\item{\textbf{Introduction to Informatics 1} \textit{Grade: 2.0}}
+
+\item{\textbf{Computational Methods (for physicists)} \textit{Grade: 1.0}}
+
+\end{itemize}
+
+\subsection{Coursera Courses}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\textbf{Big Data Specialization (ongoing):} \textit{'Big Data by University of California, San Diego', current Grade: 100\%}
+
+\vspace{2pt}
+
+\small{"Drive better business decisions with an overview of how big data is organized, analyzed, and interpreted. Apply your insights to real-world problems and questions."\\
+The course involved both theory and practical training, e.g. graph analytics and ML applications. I could gain a large insight on Apache Hadoop's ecosystem
+and was able to work with it using cloudera's VM distribution. I am yet to complete the capstone project starting in June 2016.}}
+
+\item{\textbf{Machine Learning Specialization (ongoing):} \textit{'Build Intelligent Applications by University of Washington', current Grade: 100\%}
+
+\vspace{2pt}
+
+\small{"This Specialization provides a case-based introduction to the exciting, high-demand field of machine learning."\\
+This course offers a far more theoretical approach to machine learning than the big data specialization did. What I like most about it, is the immediate 
+application of knowledge in Python using Dato GraphLab via Jupyter Notebook.}}
+
+\end{itemize}
+
+\section{Technical and Personal skills}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item \textbf{Programming Languages:} Java (very proficient), Python (proficient), C/C++ (proficient), Assembly (advanced), VHDL (advanced), HTML/CSS/PHP (advanced) \& full stack
+
+\vspace{6pt}
+
+%\item \textbf{System Administrating:} strong skills. Bash(-Scripting), Security, problem solving
+
+%\vspace{6pt}
+
+\item \textbf{Industry Software Skills:} Proficient in all major office software (both Apple and Microsoft, LibreOffice), using JetBrains products
+
+\vspace{6pt}
+
+\item \textbf{Working with following OSs:}  OSX, Windows, Linux Mint, Debian, Ubuntu, Arch Linux
+
+\vspace{6pt}
+
+\item \textbf{General Business Skills:} presentation skills, team player
+
+\vspace{6pt}
+
+\item \textbf{Other:} federally licensed Radio Amateur (call sign DF7TK, highest class)
+
+\end{itemize}
+
+\section{Interests and extra-curricular activity}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{As a radio amateur, I am eager to go beyond (technological) limits and exploring new territory.}
+
+\vspace{6pt}
+
+\item{I am passionate about life and science and also philosophy. Therefore, I enjoy thinking out of the box.}
+
+\vspace{6pt}
+
+\item{I absolutely love nature. I love roaming through green and wild scenery and going for walks with my wonderful wife. Also, I like taking the bike or going for a run.}
+
+\end{itemize}
+
+\section{References}
+
+\vspace{6pt}
+ 
+\begin{itemize}
+
+\item{One reference available on request.}
+
+\end{itemize}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
