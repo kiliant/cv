@@ -1,0 +1,10 @@
+image: ablu/ubuntu-texlive-full:latest
+
+pdf: 
+    script:
+        - pdflatex cv.tex
+    
+    artifacts:
+        #expire_in: 1 week
+        paths:
+            - cv.pdf
